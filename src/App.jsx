@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      <DaisyNav></DaisyNav>
       <Nav></Nav>
     </>
   )
