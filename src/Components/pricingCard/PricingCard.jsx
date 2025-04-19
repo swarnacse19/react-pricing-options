@@ -4,7 +4,7 @@ import PricingFeature from "./PricingFeature";
 function PricingCard({ pricing }) {
   //console.log(pricing);
   const { name, price, description, features } = pricing;
-  
+
   return (
     <div className='flex flex-col border bg-amber-600 rounded-2xl p-4'>
       {/* card header */}
@@ -19,6 +19,7 @@ function PricingCard({ pricing }) {
           <PricingFeature key={index} feature={feature}></PricingFeature>
         ))}
       </div>
+      <button className='btn w-full mt-3 bg-black text-white border-none text-2xl'>Subscribe</button> 
     </div>
   );
 }
