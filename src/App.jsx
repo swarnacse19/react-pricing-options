@@ -5,6 +5,7 @@ import './App.css'
 import DaisyNav from './Components/DaisyUi/DaisyNav'
 import Nav from './Components/Navbar/Nav'
 import PricingOption from './Components/PricingOptions/PricingOption'
+import ResultCharts from './Components/ResultChart/ResultCharts'
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
 
@@ -20,6 +21,8 @@ function App() {
         <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
           <PricingOption pricingPromise={pricingPromise}></PricingOption>
         </Suspense>
+
+        <ResultCharts></ResultCharts>
       </main>
     </>
   )
